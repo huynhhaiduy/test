@@ -1,4 +1,4 @@
-.login-container {
+.register-container {
     .header {
         height: 45px;
         text-align: right;
@@ -29,17 +29,15 @@
         text-align: center;
     }
 
-    .content-form {        
+    .content-form {
+
         input {
-            margin-bottom: 15px;
+            margin-bottom: 15px ;
             margin-top: 3px;
         }
 
-        .forgot-password {
-            text-decoration: underline;
-        }
-
         button {
+            width: 100%;
             width: 100%;
             height: 40px;
             border: none;
@@ -51,6 +49,17 @@
 
         .back {
             cursor: pointer;
+        }
+
+        .pass-group {
+            position: relative;
+
+            .icons-eye {
+                cursor: pointer;
+                position: absolute;
+                right: 10px;
+                bottom: 10px;
+            }
         }
     }
 }
