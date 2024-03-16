@@ -7,6 +7,7 @@ import { useDispatch } from "react-redux";
 import { doLogin } from "../../redux/action/userAction";
 import { ImSpinner10 } from "react-icons/im";
 import Language from "../Header/Language";
+import { useTranslation, Trans } from "react-i18next";
 
 const Login = (props) => {
   const [email, setEmail] = useState("");
@@ -59,21 +60,25 @@ const Login = (props) => {
     }
   };
 
+  const { t } = useTranslation();
+
   return (
     <div className="login-container">
       <div className="header">
-        <span>Don't have an account yet?</span>
-        <button onClick={() => navigate("/register")}>Sign up</button>
+        <span>{t("login.do-not-have")}</span>
+        <button onClick={() => navigate("/register")}>
+          {t("login.signup")}
+        </button>
         <Language />
       </div>
 
       <div className="title col-4 mx-auto">React &amp; Duy</div>
 
-      <div className="welcome col-4 mx-auto">Hello, who's this?</div>
+      <div className="welcome col-4 mx-auto">{t("login.welcome")}</div>
 
       <div className="content-form col-4 mx-auto">
         <div className="form-group">
-          <label>Email</label>
+          <label>{t("login.email")}</label>
           <input
             type="email"
             className="form-control"
@@ -83,7 +88,7 @@ const Login = (props) => {
         </div>
 
         <div className="form-group">
-          <label>Password</label>
+          <label>{t("login.password")}</label>
           <input
             type="password"
             className="form-control"
@@ -93,7 +98,7 @@ const Login = (props) => {
           />
         </div>
 
-        <span className="forgot-password">Forgot password?</span>
+        <span className="forgot-password">{t("login.forgot-pass")}</span>
 
         <div>
           <button
@@ -102,7 +107,7 @@ const Login = (props) => {
             disabled={isLoading}
           >
             {isLoading === true && <ImSpinner10 className="loader-icon" />}
-            <span> Login to Duy's Blog</span>
+            <span>{t("login.do-login")}</span>
           </button>
         </div>
         <div className="text-center">
@@ -112,7 +117,7 @@ const Login = (props) => {
               navigate("/");
             }}
           >
-            &#60;&#60; Go to Homepage
+            &#60;&#60; {t("login.back")}
           </span>
         </div>
       </div>

@@ -4,7 +4,113 @@
         "title2":
           "Tạo một bài kiểm tra với các loại câu hỏi khác nhau để thu hút học sinh trong lớp học, đào tạo nhân viên tại nơi làm việc hoặc chơi đố vui với bạn bè.",
         "title3": {
-          "login": "Bắt đầu hoàn toàn miễn phí"
+          "login": "Bắt đầu ngay. Hoàn toàn miễn phí",
+          "doing": "Làm bài thi ngay"
+        }
+      },
+      "header": {
+        "brand": "Huỳnh Hải Duy",
+        "home": "Trang Chủ",
+        "user": "Người Dùng",
+        "admin": "Quản Trị",
+        "login": "Đăng nhập",
+        "signup": "Đăng ký",
+        "setting": "Cài Đặt",
+        "profile": "Thông Tin Cá Nhân",
+        "logout": "Đăng Xuất",
+        "quiz": "Làm Bài Quiz"
+      },
+      "quiz": {
+        "question": "Câu hỏi",
+        "result": "Kết quả bài thi...",
+        "total-question": "Tổng số câu hỏi",
+        "total-correct": "Tổng số câu trả lời đúng",
+        "show-answer": "Hiển thị đáp án",
+        "close": "Đóng"
+      },
+      "login": {
+        "do-not-have": "Bạn chưa có tài khoản?",
+        "signup": "Đăng ký",
+        "welcome": "Xin chào, đăng nhập để khám phá ngay",
+        "email": "Email",
+        "password": "Mật khẩu",
+        "forgot-pass": "Quên mật khẩu?",
+        "do-login": "Đăng nhập",
+        "back": "Trở về trang chủ"
+      },
+      "register": {
+        "already": "Bạn đã có tài khoản?",
+        "login": "Đăng nhập",
+        "start": "Đăng ký ngay và bắt đầu khám phá!",
+        "email": "Email",
+        "password": "Mật khẩu",
+        "username": "Tên đăng nhập",
+        "submit": "Tạo tài khoản",
+        "back": "Trở về trang chủ"
+      },
+      "admin": {
+        "dashboard": {
+          "title": "Thống kê",
+          "total-user": "Tổng users",
+          "total-quiz": "Tổng bài test",
+          "total-question": "Tổng câu hỏi",
+          "total-answer": "Tổng câu trả lời"
+        },
+        "sidebar": {
+          "dashboard": "Tổng quan",
+          "manage-user": "Quản lý người dùng",
+          "manage-quiz": "Quản lý bài thi",
+          "manage-question": "Quản lý câu hỏi",
+          "feature": "Chức năng",
+          "brand": "Huỳnh Hải Duy"
+        },
+        "manage-user": {
+          "title": "Quản lý người dùng",
+          "add-new": "Thêm mới",
+          "role": "Vai trò",
+          "action": "Hành động",
+          "update": "Sửa",
+          "delete": "Xóa",
+          "view": "Chi tiết",
+          "modal": {
+            "title": "Thêm mới Users",
+            "role": "Vai trò",
+            "t-update": "Cập nhật người dùng",
+            "t-delete": "Xác nhận xóa người dùng",
+            "sure": "Bạn có chắc chắn muốn xóa người dùng này?",
+            "confirm": "Xác nhận",
+            "cancel": "Hủy",
+            "close": "Đóng",
+            "save": "Lưu"
+          }
+        },
+        "manage-quiz": {
+          "a1": "Quản lý bài thi",
+          "a2": "Cập nhật Q/A cho bài thi",
+          "a3": "Gán bài thi cho người dùng",
+          "add-quiz": "Thêm bài thi mới",
+          "quiz-name": "Tên bài thi",
+          "quiz-desc": "Miêu tả",
+          "quiz-type": "Độ khó bài thi",
+          "type": "Độ khó bài thi...",
+          "quiz-save": "Lưu",
+          "quiz-close": "Đóng",
+          "quiz-upload": "Tải ảnh",
+          "s-quiz": "Chọn bài thi:",
+          "s-user": "Chọn người dùng:",
+          "a-questions": "Câu hỏi:",
+          "add-questions": "Thêm câu hỏi:",
+          "q": "Miêu tả câu hỏi ",
+          "a": "Đáp án ",
+          "d": "",
+          "u": "Cập nhật bài thi",
+          "q-assign": "Gán",
+          "sq": "Lưu câu hỏi",
+          "tq": "Quản lý câu hỏi",
+          "q-confirm": "Xác nhận xóa bài thi",
+          "confirm": "Bạn có chắc chắn muốn xóa bài thi này không?",
+          "cf": "Xác nhận",
+          "cancel": "Hủy"
         }
       }
 }

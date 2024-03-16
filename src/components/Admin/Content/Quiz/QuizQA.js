@@ -15,6 +15,7 @@ import {
   postUpsertQA,
 } from "../../../../services/apiService";
 import { toast } from "react-toastify";
+import { useTranslation, Trans } from "react-i18next";
 
 const QuizQA = (props) => {
   const initQuestions = [
@@ -292,11 +293,13 @@ const QuizQA = (props) => {
     }
   };
 
+  const { t } = useTranslation();
+
   return (
     <div className="questions-container">
       <div className="add-new-question">
         <div className="col-6 form-group">
-          <label className="mb-2">Select Quiz:</label>
+          <label className="mb-2">{t("admin.manage-quiz.s-quiz")}</label>
           <Select
             value={selectedQuiz}
             onChange={setSelectedQuiz}
@@ -304,7 +307,7 @@ const QuizQA = (props) => {
           />
         </div>
 
-        <div className="mt-3 mb-2">Add questions:</div>
+        <div className="mt-3 mb-2">{t("admin.manage-quiz.add-questions")}</div>
 
         {questions &&
           questions.length > 0 &&
@@ -326,7 +329,10 @@ const QuizQA = (props) => {
                         )
                       }
                     />
-                    <label>Question {index + 1}'s description</label>
+                    <label>
+                      {t("admin.manage-quiz.q")} {index + 1}
+                      {t("admin.manage-quiz.d")}
+                    </label>
                   </div>
 
                   <div className="group-upload">
@@ -405,7 +411,9 @@ const QuizQA = (props) => {
                               )
                             }
                           />
-                          <label>Answer {index + 1}</label>
+                          <label>
+                            {t("admin.manage-quiz.a")} {index + 1}
+                          </label>
                         </div>
                         <div className="btn-group">
                           <span
@@ -441,7 +449,7 @@ const QuizQA = (props) => {
               onClick={() => handleSubmitQuestionForQuiz()}
               className="btn btn-warning"
             >
-              Save Questions
+              {t("admin.manage-quiz.sq")}
             </button>
           </div>
         )}

@@ -7,6 +7,7 @@ import { getAllUsers, getUserWithPaginate } from "../../../services/apiService";
 import ModalUpdateUser from "./ModalUpdateUser";
 import ModalDeleteUser from "./ModalDeleteUser";
 import TableUserPaginate from "./TableUserPaginate";
+import { useTranslation, Trans } from "react-i18next";
 
 const ManageUser = (props) => {
   const LIMIT_USER = 3;
@@ -57,9 +58,11 @@ const ManageUser = (props) => {
     setDataDelete(user);
   };
 
+  const { t } = useTranslation();
+
   return (
     <div className="manage-user-container">
-      <div className="title">Manage user</div>
+      <div className="title">{t("admin.manage-user.title")}</div>
       <div className="user-content">
         <div className="btn-add-new">
           <button
@@ -67,7 +70,7 @@ const ManageUser = (props) => {
             onClick={() => setShowModalCreateUser(true)}
           >
             <FcPlus />
-            Add new users
+            {t("admin.manage-user.add-new")}
           </button>
         </div>
         <div className="table-users-container">

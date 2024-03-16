@@ -4,7 +4,113 @@
         "title2":
           "Make a quiz with different question types to engage students in a classroom, train employees at work, or play trivia with friends.",
         "title3": {
-          "login": "Get's started. It's free"
+          "login": "Get's started. It's free",
+          "doing": "Doing Quiz Now"
+        }
+      },
+      "header": {
+        "brand": "Huynh Hai Duy",
+        "home": "Home",
+        "user": "Users",
+        "admin": "Admin",
+        "login": "Log in",
+        "signup": "Sign up",
+        "setting": "Setting",
+        "profile": "Profile",
+        "logout": "Log out",
+        "quiz": "Doing Quiz Now"
+      },
+      "quiz": {
+        "question": "Question",
+        "result": "Your Result",
+        "total-question": "Total Questions",
+        "total-correct": "Total Correct Answers",
+        "show-answer": "Show answers",
+        "close": "Close"
+      },
+      "login": {
+        "do-not-have": "Don't have an account yet?",
+        "signup": "Sign up",
+        "welcome": "Hello, log in to explore now",
+        "email": "Email",
+        "password": "Password",
+        "forgot-pass": "Forgot password?",
+        "do-login": "Log in",
+        "back": "Go to Homepage"
+      },
+      "register": {
+        "already": "Already have an account?",
+        "login": "Log in",
+        "start": "Sign up now and start exploring!",
+        "email": "Email (*)",
+        "password": "Password (*)",
+        "username": "Username",
+        "submit": "Create my free account",
+        "back": "Go to Homepage"
+      },
+      "admin": {
+        "dashboard": {
+          "title": "Analytics Dashboard",
+          "total-user": "Total Users",
+          "total-quiz": "Total Quizzes",
+          "total-question": "Total Questions",
+          "total-answer": "Total Answers"
+        },
+        "sidebar": {
+          "dashboard": "Dashboard",
+          "manage-user": "Manage users",
+          "manage-quiz": "Manage Quizzes",
+          "manage-question": "Manage Questions",
+          "feature": "Features",
+          "brand": "Huynh Hai Duy"
+        },
+        "manage-user": {
+          "title": "Manage user",
+          "add-new": "Add new users",
+          "role": "Role",
+          "action": "Action",
+          "update": "Update",
+          "delete": "Delete",
+          "view": "View",
+          "modal": {
+            "title": "Add new user",
+            "role": "Role",
+            "t-update": "Update user",
+            "t-delete": "Confirm delete the user",
+            "sure": "Are you sure you want to delete this user?",
+            "confirm": "Confirm",
+            "cancel": "Cancel",
+            "close": "Close",
+            "save": "Save"
+          }
+        },
+        "manage-quiz": {
+          "a1": "Manage Quizzes",
+          "a2": "Update Q/A Quizzes",
+          "a3": "Assign To Users",
+          "add-quiz": "Add new quiz",
+          "quiz-name": "Name",
+          "quiz-desc": "Description",
+          "quiz-type": "Type",
+          "type": "Quiz type...",
+          "quiz-save": "Save",
+          "quiz-close": "Close",
+          "quiz-upload": "Upload Image",
+          "s-quiz": "Select Quiz:",
+          "s-user": "Select User:",
+          "a-questions": "Add questions:",
+          "add-questions": "Add questions:",
+          "q": "Question ",
+          "a": "Answer ",
+          "d": "'s description",
+          "u": "Update the quiz",
+          "q-assign": "Assign",
+          "sq": "Save Questions",
+          "tq": "Manage Questions",
+          "q-confirm": "Confirm delete the quiz",
+          "confirm": "Are you sure you want to delete this quiz?",
+          "cf": "Confirm",
+          "cancel": "Cancel"
         }
       }
 }

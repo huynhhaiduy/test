@@ -4,6 +4,7 @@ import Modal from "react-bootstrap/Modal";
 import { FcPlus } from "react-icons/fc";
 import { toast } from "react-toastify";
 import { postCreateNewUser } from "../../../services/apiService";
+import { useTranslation, Trans } from "react-i18next";
 
 const ModalCreateUser = (props) => {
   const { show, setShow } = props;
@@ -69,6 +70,8 @@ const ModalCreateUser = (props) => {
     }
   };
 
+  const { t } = useTranslation();
+
   return (
     <>
       {/* <Button variant="primary" onClick={handleShow}>
@@ -83,7 +86,7 @@ const ModalCreateUser = (props) => {
         className="modal-add-user"
       >
         <Modal.Header closeButton>
-          <Modal.Title>Add new user</Modal.Title>
+          <Modal.Title>{t("admin.manage-user.modal.title")}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <form className="row g-3">
@@ -118,7 +121,9 @@ const ModalCreateUser = (props) => {
             </div>
 
             <div className="col-md-4">
-              <label className="form-label">Role</label>
+              <label className="form-label">
+                {t("admin.manage-user.modal.role")}
+              </label>
               <select
                 className="form-select"
                 onChange={(event) => setRole(event.target.value)}

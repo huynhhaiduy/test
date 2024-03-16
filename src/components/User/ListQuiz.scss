@@ -3,3 +3,9 @@
     gap: 50px;
     flex-wrap: wrap;
 }
+
+.card-img-top {
+    width: 100%;
+    height: 20vw;
+    object-fit: cover;
+}
